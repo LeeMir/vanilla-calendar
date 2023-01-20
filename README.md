@@ -9,13 +9,14 @@
 Install dependencies
 
 ```sh
-npm install
+yarn
+# or yarn install
 ```
 
 ## 작업 방법 (Development)
 
 ```sh
-npm start
+yarn start
 # Visit http://localhost:1234 from your browser (Chrome)
 ```
 
