@@ -2,7 +2,6 @@
   "name": "vanilla-digital-clock",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "npx parcel index.html --open",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,12 +9,10 @@
   "keywords": [],
   "author": "nashu",
   "license": "ISC",
-  "dependencies": {
-    "parcel-bundler": "^1.12.4"
-  },
+  "browserslist": "> 0.25%, not dead",
   "packageManager": "yarn@3.3.1",
   "devDependencies": {
-    "@types/node": "^18.11.18",
+    "parcel": "^2.8.3",
     "typescript": "^4.9.4"
   }
 }
