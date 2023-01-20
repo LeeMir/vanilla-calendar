@@ -2,3 +2,11 @@
 node_modules
 dist/
 .cache
+
+.parcel-cache
+
+# yarn berry
+.yarn/*
+!.yarn/plugins
+!.yarn/releases
+.pnp.*
