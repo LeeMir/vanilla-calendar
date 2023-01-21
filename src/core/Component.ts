@@ -28,6 +28,7 @@ export default class Component {
   init() {
     this.render();
     this.setup();
+    this.setEvent();
   }
 
   /**
@@ -48,4 +49,9 @@ export default class Component {
   render() {
     this.$target.innerHTML = this.template();
   }
+
+  /**
+   * Event Listener 일괄 등록
+   */
+  setEvent() {}
 }
