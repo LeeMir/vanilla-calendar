@@ -11,3 +11,29 @@ body {
 }
 
 /* 이 아래부터는 필요에 따라 삭제, 변경해도 됩니다 */
+
+.calendar__container {
+  display: flex;
+
+  width: 20rem;
+}
+
+.calendar__controller__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+}
+
+.calendar__controller__btn {
+  width: 2rem;
+  height: 2rem;
+
+  border: none;
+  background: none;
+}
+
+.calendar__controller__btn img {
+  width: 100%;
+}
