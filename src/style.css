@@ -20,7 +20,7 @@ body {
   gap: 1rem;
 }
 
-.calendar__controller__container {
+.calendar__month-controller__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,7 +28,7 @@ body {
   width: 100%;
 }
 
-.calendar__controller__btn {
+.calendar__month-controller__btn {
   width: 2rem;
   height: 2rem;
 
@@ -36,7 +36,7 @@ body {
   background: none;
 }
 
-.calendar__controller__btn img {
+.calendar__month-controller__btn img {
   width: 100%;
 }
 

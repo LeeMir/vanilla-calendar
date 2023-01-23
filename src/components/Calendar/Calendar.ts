@@ -1,7 +1,7 @@
 import Component from '../../core/Component';
 
+import MonthController from './MonthController';
 import DayTable from './DayTable';
-import Controller from './Controller';
 
 export interface CalendarState {
   view: Date;
@@ -18,7 +18,7 @@ export default class Calendar extends Component {
   }
 
   setup() {
-    this.$controller = new Controller({
+    this.$controller = new MonthController({
       $parent: this.$target,
       initState: { year: this.state.view.getFullYear(), month: this.state.view.getMonth() },
     });
