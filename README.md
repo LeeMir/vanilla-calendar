@@ -4,7 +4,7 @@
 
 ## 예시
 
-![예시 이미지](./calendar.gif)
+![예시 이미지](./example.gif)
 
 ## 사전 설치 (Setup)
 
