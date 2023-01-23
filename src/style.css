@@ -14,8 +14,10 @@ body {
 
 .calendar__container {
   display: flex;
+  flex-direction: column;
 
-  width: 20rem;
+  width: 25rem;
+  gap: 1rem;
 }
 
 .calendar__controller__container {
@@ -36,4 +38,19 @@ body {
 
 .calendar__controller__btn img {
   width: 100%;
+}
+
+.calendar__table__container {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.calendar__table__cell {
+  text-align: center;
+  line-height: 2rem;
+}
+
+.calendar__table__cell--today {
+  background-color: #ffd255;
+  color: #ffffff;
 }

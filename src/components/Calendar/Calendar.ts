@@ -1,5 +1,6 @@
 import Component from '../../core/Component';
 
+import DayTable from './DayTable';
 import Controller from './Controller';
 
 export interface CalendarState {
@@ -8,8 +9,8 @@ export interface CalendarState {
 }
 
 export default class Calendar extends Component {
-  // state: { view: Date, select: Date }
   $controller: Component;
+  $table: Component;
   state: CalendarState;
   constructor({ $parent, initState }) {
     super({ tag: 'div', $parent, initState });
@@ -21,6 +22,10 @@ export default class Calendar extends Component {
       $parent: this.$target,
       initState: { year: this.state.view.getFullYear(), month: this.state.view.getMonth() },
     });
+    this.$table = new DayTable({
+      $parent: this.$target,
+      initState: this.state,
+    });
   }
 
   setState(nextState: CalendarState): void {
@@ -29,5 +34,6 @@ export default class Calendar extends Component {
       year: nextState.view.getFullYear(),
       month: nextState.view.getMonth(),
     });
+    this.$table.setState(nextState);
   }
 }
