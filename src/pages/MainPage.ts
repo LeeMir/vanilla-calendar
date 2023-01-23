@@ -1,4 +1,4 @@
-import { nextMonth, prevMonth } from '../utils/date';
+import { getDateFromYYYYMMDD, nextMonth, prevMonth } from '../utils/date';
 import Page from '../core/Page';
 import Component from '../core/Component';
 import Calendar, { CalendarState } from '../components/Calendar/Calendar';
@@ -46,6 +46,14 @@ export default class MainPage extends Page {
 
       if (classList.contains('calendar__controller__btn--right')) {
         const nextCalendar = { ...this.state.calendar, view: nextMonth(this.state.calendar.view) };
+        this.setState({ ...this.state, calendar: nextCalendar });
+      }
+
+      if (classList.contains('calendar__table__cell')) {
+        const YYYYMMDD = targetElement.dataset['date'];
+        const date = getDateFromYYYYMMDD(YYYYMMDD!);
+        const nextCalendar = { ...this.state.calendar, select: date };
+
         this.setState({ ...this.state, calendar: nextCalendar });
       }
     });
