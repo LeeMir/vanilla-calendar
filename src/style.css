@@ -63,6 +63,8 @@ body {
 
   border: none;
   background: none;
+
+  cursor: pointer;
 }
 
 .calendar__month-controller__btn img {
@@ -83,9 +85,28 @@ body {
   text-align: center;
   line-height: 2rem;
   padding: 0;
+
+  cursor: pointer;
+}
+
+.calendar__table__cell:hover {
+  background-color: #dfdfdf;
 }
 
 .calendar__table__cell--today {
   background-color: #ffd255;
   color: #ffffff;
+}
+
+.calendar__table__cell--today:hover {
+  background-color: #ffd255;
+}
+
+.calendar__table__cell--selected {
+  background-color: #ff7777;
+  color: #ffffff;
+}
+
+.calendar__table__cell--selected:hover {
+  background-color: #ff7777;
 }
