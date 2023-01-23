@@ -53,8 +53,10 @@ body {
   align-items: center;
 
   font-size: 1.25rem;
+  padding: 0 1rem;
 
   width: 100%;
+  box-sizing: border-box;
 }
 
 .calendar__month-controller__btn {
