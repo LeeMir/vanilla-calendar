@@ -4,10 +4,111 @@ body {
   padding: 0;
 }
 
-.wrap {
+#wrap {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* 이 아래부터는 필요에 따라 삭제, 변경해도 됩니다 */
+
+.calendar__container {
+  display: flex;
+
+  width: 45rem;
+  padding: 2rem 1rem 1rem 1rem;
+  border: 3px solid #000;
+}
+
+.calendar__main__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  max-width: 60%;
+}
+
+.calendar__day-board__container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: center;
+
+  flex-grow: 1;
+}
+
+.calendar__day-board__day-sign {
+  font-size: 1.5rem;
+}
+
+.calendar__day-board__date-sign {
+  font-size: 8rem;
+  font-weight: 700;
+}
+
+.calendar__month-controller__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 1.25rem;
+  padding: 0 1rem;
+
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.calendar__month-controller__btn {
+  width: 2rem;
+  height: 2rem;
+
+  border: none;
+  background: none;
+
+  cursor: pointer;
+}
+
+.calendar__month-controller__btn img {
+  width: 100%;
+}
+
+.calendar__table__container {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+}
+
+.calendar__table__row {
+  height: 2rem;
+}
+
+.calendar__table__cell {
+  text-align: center;
+  line-height: 2rem;
+  padding: 0;
+
+  cursor: pointer;
+}
+
+.calendar__table__cell:hover {
+  background-color: #dfdfdf;
+}
+
+.calendar__table__cell--today {
+  background-color: #ffd255;
+  color: #ffffff;
+}
+
+.calendar__table__cell--today:hover {
+  background-color: #ffd255;
+}
+
+.calendar__table__cell--selected {
+  background-color: #ff7777;
+  color: #ffffff;
+}
+
+.calendar__table__cell--selected:hover {
+  background-color: #ff7777;
+}
