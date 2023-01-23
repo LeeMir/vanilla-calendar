@@ -24,7 +24,7 @@ export default class DayTable extends Component {
       let datePtr = firstDateOfMonth(this.state.view);
       const today = new Date();
       for (let i = 0; i < 6; i++) {
-        html += '<tr>';
+        html += '<tr class="calendar__table__row">';
         for (let j = 0; j < 7; j++) {
           if (i === 0 && !flag && j === firstDate.getDay()) {
             flag = true;
