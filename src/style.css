@@ -52,7 +52,6 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  font-size: 1.25rem;
   padding: 0 1rem;
 
   width: 100%;
@@ -67,6 +66,18 @@ body {
   background: none;
 
   cursor: pointer;
+}
+
+.calendar__month-controller__title {
+  font-size: 1.25rem;
+  background: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+.calendar__month-controller__title:hover {
+  color: #666;
 }
 
 .calendar__month-controller__btn img {
