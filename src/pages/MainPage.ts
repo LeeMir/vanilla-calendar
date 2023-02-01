@@ -39,13 +39,18 @@ export default class MainPage extends Page {
       const tagName = targetElement.tagName;
       const classList = targetElement.classList;
 
-      if (classList.contains('calendar__controller__btn--left')) {
+      if (classList.contains('calendar__month-controller__btn--left')) {
         const nextCalendar = { ...this.state.calendar, view: prevMonth(this.state.calendar.view) };
         this.setState({ ...this.state, calendar: nextCalendar });
       }
 
-      if (classList.contains('calendar__controller__btn--right')) {
+      if (classList.contains('calendar__month-controller__btn--right')) {
         const nextCalendar = { ...this.state.calendar, view: nextMonth(this.state.calendar.view) };
+        this.setState({ ...this.state, calendar: nextCalendar });
+      }
+
+      if (classList.contains('calendar__month-controller__title')) {
+        const nextCalendar = { select: new Date(), view: new Date() };
         this.setState({ ...this.state, calendar: nextCalendar });
       }
 

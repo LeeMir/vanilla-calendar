@@ -18,11 +18,13 @@ export default class MonthController extends Component {
 
   template() {
     return `
-      <button class="calendar__month-controller__btn calendar__controller__btn--left">
+      <button class="calendar__month-controller__btn calendar__month-controller__btn--left">
         <img src=${LeftIcon} />
       </button>
-      <span>${MONTH[this.state.month]} ${this.state.year}</span>
-      <button class="calendar__month-controller__btn calendar__controller__btn--right">
+      <button class="calendar__month-controller__title">
+        ${MONTH[this.state.month]} ${this.state.year}
+      </button>
+      <button class="calendar__month-controller__btn calendar__month-controller__btn--right">
         <img src=${RightIcon} />
       </button>
     `;
